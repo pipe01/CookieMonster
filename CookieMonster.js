@@ -2920,9 +2920,7 @@ CM.Loop = function() {
 
 CM.Init = function() {
 	var proceed = true;
-	if (Game.version != CM.VersionMajor) {
-		proceed = confirm('Cookie Monster version ' + CM.VersionMajor + '.' + CM.VersionMinor + ' is meant for Game version ' + CM.VersionMajor + '.  Loading a different version may cause errors.  Do you still want to load Cookie Monster?');
-	}
+
 	if (proceed) {
 		CM.Cache.AddQueue();
 		CM.Disp.AddJscolor();
